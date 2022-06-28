@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Background-Color: #e60c2c;
+  --Text-Color: #fff;
+  --Text-Color-Alt: #111;
+}
+
+section {
+  align-items: center;
+  background: var(--Background-Color);
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 100px;
+  position: relative;
+  transition: 0.5s;
+  width: 100%;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 20px 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header .logo {
+  max-width: 60px;
+  position: relative;
+}
+
+header .logo:hover {
+  animation: logo 0.1s linear infinite;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1.07);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+header ul {
+  display: flex;
+  position: relative;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  color: var(--Text-Color);
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.content .textBox {
+  max-width: 600px;
+  position: relative;
+}
+
+.content .textBox h2 {
+  color: var(--Text-Color);
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+  font-size: 1.5em;
+}
+
+.content .textBox p {
+  color: var(--Text-Color);
+}
+
+.content .textBox a {
+  background: var(--Text-Color);
+  border-radius: 40px;
+  color: var(--Text-Color-Alt);
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content .imgBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  width: 600px;
+}
+
+.content .imgBox img {
+  max-width: 400px;
+}
+
+.thumb {
+  bottom: 20px;
+  display: flex;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.thumb li {
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 40px;
+}
+
+.sci {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  filter: invert(1);
+  margin: 5px 0;
+  transform: scale(0.6);
+}
